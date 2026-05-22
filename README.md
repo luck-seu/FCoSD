@@ -3,7 +3,12 @@
 # FCoSD: Eliciting Frequency-Conditioned Spatial Dynamics for Long-Term Spatio-Temporal Forecasting
 
 <p align="center">
-  <img src="assets/fcosd-logo.svg" alt="FCoSD logo" width="760">
+  <img
+    src="assets/fcosd-logo.svg"
+    alt="FCoSD logo"
+    width="600"
+    style="transform: scaleX(1.5) scaleY(1);"
+  >
 </p>
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
