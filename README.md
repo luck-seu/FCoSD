@@ -6,8 +6,8 @@
   <img
     src="assets/fcosd-logo.svg"
     alt="FCoSD logo"
-    width="800"
-    style="transform: scaleX(1.5) scaleY(1);"
+    width="1000"
+    style="transform: scaleX(1.2) scaleY(0.8);"
   >
 </p>
 
