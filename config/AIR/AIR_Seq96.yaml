@@ -1,0 +1,70 @@
+# --------- General Configs ---------
+GENERAL:
+  runner: 'FCoSDRunner'
+  task_name: 'LTSF'
+  mode: 'train'
+  batch_size: 16
+  max_epochs: 20
+  early_stop_patience: 5
+
+
+# --------- Data Configs ---------
+DATA:
+  in_steps: 96
+  out_steps: 96
+  x_time_of_day: True
+  x_day_of_week: True
+  y_time_of_day: True
+  y_day_of_week: True
+
+
+# --------- Training Configs ---------
+# TODO: Support more loss functions
+OPTIM:
+  loss: 'MAE'
+  initial_lr: 0.0005
+  lr_centers: 0.01
+  weight_decay: 0.001
+  lr_scheduler_type: 'ExponentialLR'
+  lr_scheduler_gamma: 0.5
+  clip_grad: 5.0
+
+
+# --------- Model Configs ---------
+# TODO: Add ablation settings.
+MODEL_PARAM:
+  history_seq_len: 96
+  future_seq_len: 96
+  num_channels: 1202
+  d_model: 512
+  e_layers: 3
+  ffn_activation: 'gelu'
+  use_norm: True
+  emb_dropout: 0.1
+  d_state: 64
+  d_conv: 4
+  expand: 1
+  d_ff: 2048
+  ffn_dropout: 0.1
+  num_bands: 3
+  rank: 20
+  freq_bands:
+    - [0, 0.05]
+    - [0.05, 0.1]
+    - [0.1, 0.5]
+  input_dim: 256
+  spatial_dim: 128
+  tod_dim: 64
+  dow_dim: 64
+  lap_dim: 30
+  headdim: 64
+  d_inner: 0
+  rank2: 32
+  node_dim: 64
+  d_band: 32
+  op_w: 0.01
+  shared_band: True
+  use_adj: True
+  use_mamba2: True
+  use_mvg: False
+  use_rnn: False

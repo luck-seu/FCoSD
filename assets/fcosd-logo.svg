@@ -1,0 +1,60 @@
+<svg width="980" height="280" viewBox="0 0 980 280" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">FCoSD logo</title>
+  <desc id="desc">FCoSD wordmark with frequency waves and spatial graph nodes.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="980" y2="280" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#101828"/>
+      <stop offset="0.55" stop-color="#16324A"/>
+      <stop offset="1" stop-color="#0B3B46"/>
+    </linearGradient>
+    <linearGradient id="wave" x1="98" y1="156" x2="884" y2="156" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#38BDF8"/>
+      <stop offset="0.48" stop-color="#2DD4BF"/>
+      <stop offset="1" stop-color="#A3E635"/>
+    </linearGradient>
+    <linearGradient id="text" x1="254" y1="70" x2="735" y2="185" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F8FAFC"/>
+      <stop offset="0.64" stop-color="#D6FFF6"/>
+      <stop offset="1" stop-color="#BFF08A"/>
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-40%" width="140%" height="180%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.15 0 0 0 0 0.85 0 0 0 0 0.82 0 0 0 0.5 0"/>
+      <feBlend in="SourceGraphic" in2="blur" mode="screen"/>
+    </filter>
+    <filter id="nodeGlow" x="-120%" y="-120%" width="340%" height="340%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feBlend in="SourceGraphic" in2="blur" mode="screen"/>
+    </filter>
+  </defs>
+
+  <rect x="8" y="8" width="964" height="264" rx="34" fill="url(#bg)"/>
+  <rect x="9.5" y="9.5" width="961" height="261" rx="32.5" stroke="#67E8F9" stroke-opacity="0.22" stroke-width="3"/>
+
+  <path d="M91 193 C130 121 163 214 201 150 C239 86 270 185 311 135 C350 89 386 152 422 121 C469 80 501 174 546 128 C587 86 629 185 669 137 C706 93 745 152 785 121 C827 88 858 151 893 100" stroke="url(#wave)" stroke-width="9" stroke-linecap="round" filter="url(#softGlow)"/>
+  <path d="M91 217 C130 145 163 238 201 174 C239 110 270 209 311 159 C350 113 386 176 422 145 C469 104 501 198 546 152 C587 110 629 209 669 161 C706 117 745 176 785 145 C827 112 858 175 893 124" stroke="#38BDF8" stroke-opacity="0.22" stroke-width="5" stroke-linecap="round"/>
+  <path d="M91 169 C130 97 163 190 201 126 C239 62 270 161 311 111 C350 65 386 128 422 97 C469 56 501 150 546 104 C587 62 629 161 669 113 C706 69 745 128 785 97 C827 64 858 127 893 76" stroke="#A3E635" stroke-opacity="0.16" stroke-width="5" stroke-linecap="round"/>
+
+  <g opacity="0.72" stroke="#8EE8E0" stroke-width="2">
+    <path d="M126 82 L172 53 L229 91 L196 139 L142 132 Z"/>
+    <path d="M742 70 L804 47 L858 87 L835 143 L771 132 Z"/>
+    <path d="M172 53 L196 139"/>
+    <path d="M804 47 L835 143"/>
+  </g>
+
+  <g filter="url(#nodeGlow)">
+    <circle cx="126" cy="82" r="7" fill="#38BDF8"/>
+    <circle cx="172" cy="53" r="6" fill="#2DD4BF"/>
+    <circle cx="229" cy="91" r="7" fill="#A3E635"/>
+    <circle cx="196" cy="139" r="6" fill="#E0F2FE"/>
+    <circle cx="142" cy="132" r="6" fill="#67E8F9"/>
+    <circle cx="742" cy="70" r="6" fill="#67E8F9"/>
+    <circle cx="804" cy="47" r="7" fill="#A3E635"/>
+    <circle cx="858" cy="87" r="6" fill="#E0F2FE"/>
+    <circle cx="835" cy="143" r="7" fill="#2DD4BF"/>
+    <circle cx="771" cy="132" r="6" fill="#38BDF8"/>
+  </g>
+
+  <text x="490" y="154" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="96" font-weight="800" letter-spacing="2" fill="url(#text)">FCoSD</text>
+  <text x="490" y="199" text-anchor="middle" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22" font-weight="600" letter-spacing="5" fill="#CFFAFE" opacity="0.82">FREQUENCY-CONDITIONED SPATIAL DYNAMICS</text>
+</svg>
