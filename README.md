@@ -35,7 +35,7 @@ FCoSD/
 |   +-- PEMSTREAM/
 |   +-- UrbanEV/
 +-- data/
-|   +-- dataloader.py                # STF/LTSF data loaders
+|   +-- dataloader.py                # LTSF data loaders
 +-- model/
 |   +-- FCoSDNet.py                  # FCoSD model definition
 |   +-- FreqDec.py                   # Frequency decomposition modules
@@ -115,7 +115,7 @@ To evaluate a saved checkpoint, set `GENERAL.mode` to `test` in the correspondin
 python train.py \
     --dataset_name ENERGY \
     --config_path ./config/ENERGY/ENERGY_Seq96.yaml \
-    --checkpoint ./checkpoints/ENERGY/ENERGY-2026-01-22-17-46-59-best1.pt
+    --checkpoint ./checkpoints/ENERGY/ENERGY-xxx-best.pt
 ```
 
 ## Configuration
