@@ -6,7 +6,7 @@
   <img
     src="assets/fcosd-logo.svg"
     alt="FCoSD logo"
-    width="700"
+    width="600"
     style="transform: scaleX(0.2) scaleY(0.1);"
   >
 </p>
