@@ -1,4 +1,4 @@
-<h2 align="center">FCoSD-KDD'26</h2>
+<h1 align="center">FCoSD-KDD'26</h1>
 
 # FCoSD: Eliciting Frequency-Conditioned Spatial Dynamics for Long-Term Spatio-Temporal Forecasting
 
